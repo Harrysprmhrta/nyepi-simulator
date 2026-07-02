@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Nyepi Simulator</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="hero-lock">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">NYEPI SIMULATOR</div>
+
+      <div class="nav-actions">
+        <span id="soundToggle" title="Toggle Sound"> 🔊 </span>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="assets/video/hero-introduction.mp4.mp4" type="video/mp4" />
+      </video>
+
+      <div class="overlay"></div>
+
+      <div class="hero-content">
+        <h1>Nyepi Simulator</h1>
+
+        <p>Experience Bali's Day of Silence</p>
+
+        <button class="start-btn" id="startJourney">Begin The Journey</button>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Click to Start</span>
+      </div>
+    </section>
+
+    <!-- SECTION 02 -->
+    <section class="noise" id="noise">
+      <video autoplay muted loop playsinline class="noise-video">
+        <source src="assets/video/noise-city.mp4" type="video/mp4" />
+      </video>
+
+      <div class="noise-overlay"></div>
+
+      <div class="noise-content">
+        <!-- LEFT -->
+        <div class="noise-left">
+          <span class="section-number"></span>
+
+          <h2>The Noise</h2>
+
+          <p>We live in a world that never stops.</p>
+
+          <p class="noise-description">
+            Every moment, our attention is pulled in countless directions by
+            messages, notifications, meetings, and endless streams of
+            information. Before experiencing the silence of Nyepi, take a moment
+            to feel the constant distractions that have quietly become part of
+            everyday life.
+          </p>
+
+          <div class="noise-wave">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="noise-right">
+          <div class="notification-container" id="notification-container"></div>
+
+          <div class="digital-clock">1,407 Notifications Today</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+SECTION : BEFORE THE SILENCE
+====================================================== -->
+
+<section class="before-silence" id="beforeSilence">
+  <div class="before-overlay"></div>
+
+  <div class="before-container">
+    <!-- INTRO -->
+
+    <div class="before-intro">
+      <h2>Before The Silence</h2>
+
+      <p class="before-lead">
+        Every journey has a beginning.
+      </p>
+
+      <div class="before-story">
+        <p>
+          When people think of Nyepi, they often imagine an island wrapped in
+          silence. But silence is never the beginning of the story—it is the
+          destination.
+        </p>
+
+        <p>
+          <p>
+  Before Bali becomes still, the island prepares itself through a series of
+  sacred rituals. Each tradition carries its own purpose, meaning, and story,
+  guiding the journey toward the silence of Nyepi.
+</p>
+        </p>
+
+        <div class="before-divider"></div>
+
+        <p class="before-ending">
+           Among these sacred traditions, two ceremonies mark the beginning of our journey.
+        </p>
+
+        <h3>Its name is <span>Melasti & Pengerupukan.</span></h3>
+      </div>
+    </div>
+
+    <!-- ========================================= -->
+    <!-- MELASTI FEATURE -->
+    <!-- ========================================= -->
+
+    <div class="feature-card feature-left">
+      <video autoplay muted loop playsinline>
+        <source src="assets/video/melasti.mp4" type="video/mp4" />
+      </video>
+
+      <div class="feature-content">
+        <p class="feature-intro">
+          As the first light touches the sea, Bali takes its first step toward
+          silence. This sacred journey is called <strong>Melasti</strong>.
+        </p>
+
+        <p>
+          Melasti is a sacred purification ceremony held several days before Nyepi.
+  During this ritual, Balinese Hindus bring sacred temple objects
+  (pratima and other ceremonial symbols) to the sea, lakes, or other
+  natural water sources to be ritually cleansed.
+
+  More than a physical cleansing, Melasti symbolizes the purification of
+  the mind, heart, and spirit. It is a moment to release negative thoughts,
+  restore inner balance, and prepare both individuals and the community to
+  enter Nyepi with a clear mind, renewed harmony, and spiritual readiness.
+        </p>
+      </div>
+    </div>
+
+    <!-- ========================================= -->
+    <!-- PENGERUPUKAN FEATURE -->
+    <!-- ========================================= -->
+
+    <div class="feature-card feature-right">
+      <video autoplay muted loop playsinline>
+        <source src="assets/video/ogoh-ogoh.mp4" type="video/mp4" />
+      </video>
+
+      <div class="feature-content">
+        <p class="feature-intro">
+          Pengerupukan is held on the eve of Nyepi and marks the final celebration
+  before the island falls completely silent. Across Bali, villages perform
+  the Ngerupuk ritual, a tradition believed to drive away negative forces and
+  restore balance before entering the new Saka year.
+          <strong>Pengerupukan</strong>.
+        </p>
+
+        <p>
+          One of its most iconic traditions is the Ogoh-Ogoh parade. For weeks, young
+  people from each Banjar and Sekaa Teruna Teruni (STT) work together to
+  design, build, and carry giant handcrafted figures through their villages.
+  In many regencies and cities, Ogoh-Ogoh competitions are also held, turning
+  Pengerupukan into a celebration of creativity, teamwork, and local pride.
+  After the parade, the island prepares to leave the noise behind and welcome
+  the silence of Nyepi.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+SECTION : BEYOND THE SILENCE
+====================================================== -->
+
+    <section class="meaning" id="beyondSilence">
+  
+
+      <div class="meaning-container">
+        <span class="section-number"> </span>
+
+        <h2>Beyond The Silence</h2>
+
+        <p class="meaning-intro">
+          Before experiencing Nyepi for yourself, 
+          take a moment to understand the meaning 
+          behind one of Bali's most remarkable traditions.
+        </p>
+
+        <!-- ===================== -->
+
+        <div class="meaning-grid">
+          <div class="meaning-card">
+            <h3>What Does "Nyepi" Mean?</h3>
+
+            <p>
+              The word <strong>Nyepi</strong> comes from the Balinese word
+              <em>sepi</em>, meaning silence, quietness, or stillness. More than
+              the absence of sound, Nyepi represents a moment to pause, reflect,
+              and reconnect with ourselves, with others, and with nature.
+            </p>
+          </div>
+
+          <div class="meaning-card">
+            <h3>The Meaning Behind Nyepi</h3>
+
+            <p>
+            Nyepi marks the Balinese New Year according to the Saka calendar.
+            The celebration unfolds through a series of sacred traditions,
+            beginning with Melasti, followed by Pengerupukan, and reaching its
+            most meaningful moment on Nyepi Day itself. For twenty-four hours,
+            Bali embraces complete silence as a time for reflection,
+            self-discipline, spiritual renewal, and harmony with nature.
+            </p>
+          </div>
+        </div>
+
+        <!-- ===================== -->
+
+        <h3 class="facts-title">Interesting Facts</h3>
+
+        <div class="facts-grid">
+          <div class="fact-card">
+            <div class="fact-icon">🌌</div>
+
+            <h4>A Sky Full of Stars</h4>
+
+            <p>
+              During Nyepi, the absence of artificial light allows the night sky
+              to reveal thousands of stars, offering one of the clearest
+              stargazing experiences in Bali.
+            </p>
+          </div>
+
+          <div class="fact-card">
+            <div class="fact-icon">✈</div>
+
+            <h4>The Airport Takes a Break</h4>
+
+            <p>
+              Ngurah Rai International Airport temporarily suspends its
+              operations during Nyepi, making Bali one of the few places in the
+              world where an international airport completely pauses for a day.
+            </p>
+          </div>
+
+          <div class="fact-card">
+            <div class="fact-icon">🌿</div>
+
+            <h4>Nature Breathes Again</h4>
+
+            <p>
+              With minimal human activity, noise and air pollution decrease
+              significantly. The peaceful atmosphere allows nature to recover,
+              even if only for a short time.
+            </p>
+          </div>
+        </div>
+
+        <!-- ===================== -->
+
+       <div class="visit-bali">
+  <h3>The Story Doesn't End Here</h3>
+
+  <p>
+    Understanding Nyepi means more than knowing its traditions. At the heart
+    of this sacred day are four principles that guide how silence is truly
+    observed. Together, they shape the experience of Nyepi itself.
+  </p>
+
+  <button class="visit-btn" id="toPrinciples">
+    Continue The Journey →
+  </button>
+</div>
+</section>
+<!-- =====================================================
+SECTION : THE FOUR PRINCIPLES
+====================================================== -->
+
+<section class="principles" id="principles">
+ 
+
+  <div class="principles-container">
+    <h2>The Four Principles of Silence</h2>
+
+    <p class="principles-intro">
+      Silence is more than the absence of sound. During Nyepi, it is guided by
+      four principles that shape the way Balinese Hindus observe the Day of
+      Silence. Together, these principles are known as
+      <strong>Catur Brata Penyepian.</strong>
+    </p>
+
+    <div class="principles-grid">
+      <div class="principle-card">
+        <h3>Amati Geni</h3>
+
+        <p>
+          Refraining from fire and artificial light, encouraging simplicity,
+          calmness, and spiritual reflection.
+        </p>
+      </div>
+
+      <div class="principle-card">
+        <h3>Amati Karya</h3>
+
+        <p>
+          Refraining from work and daily activities, allowing both body and
+          mind to rest from worldly routines.
+        </p>
+      </div>
+
+      <div class="principle-card">
+        <h3>Amati Lelungan</h3>
+
+        <p>
+          Refraining from travelling, giving the island an opportunity to pause
+          and embrace complete stillness.
+        </p>
+      </div>
+
+      <div class="principle-card">
+        <h3>Amati Lelanguan</h3>
+
+        <p>
+          Refraining from entertainment and pleasure, creating space for
+          self-reflection and inner awareness.
+        </p>
+      </div>
+    </div>
+
+    <div class="principles-ending">
+      <p>
+        Knowing these principles is one thing. Living them, even for a few
+        moments, is another.
+      </p>
+
+      <h3>Are you ready to experience Nyepi?</h3>
+
+      <button id="gotoChallenge">
+        Begin The Challenge
+      </button>
+    </div>
+  </div>
+</section>
+
+
+    <!-- SECTION 06 : NYEPI CHALLENGE -->
+
+    <section class="nyepi-challenge" id="nyepiChallenge">
+      <!-- Background Image -->
+
+      <div class="challenge-background">
+        <img
+          id="challengeImage"
+          src="assets/images/nyepi-begin.png"
+          alt="Nyepi Challenge"
+        />
+      </div>
+
+      <div class="nyepi-overlay"></div>
+
+      <!-- Content -->
+
+      <div class="challenge-container">
+        <!-- INTRO -->
+
+        <div id="challengeIntro">
+          <span class="section-number"></span>
+
+          <h2>Experience The Silence</h2>
+
+          <p class="intro-text">
+          You have learned the four principles that shape Nyepi.
+          Now it's time to experience them yourself.
+          Every choice matters.
+          </p>
+
+          <button id="startChallenge">Begin Experience</button>
+        </div>
+
+        <!-- CHALLENGE -->
+
+        <div id="challengeBox" class="hidden">
+          <div id="progress">1 / 4</div>
+
+          <h3 id="challengeTitle">Amati Geni</h3>
+
+          <p id="challengeScenario">Scenario text here</p>
+
+          <div class="decision-buttons">
+            <button id="choiceA">Choice A</button>
+
+            <button id="choiceB">Choice B</button>
+          </div>
+
+          <div id="feedback"></div>
+
+          <button id="nextChallenge" class="hidden">Continue →</button>
+        </div>
+
+        <!-- COMPLETE -->
+
+        <div id="challengeComplete" class="hidden">
+          <div id="completeScore" class="score-result">4 / 4</div>
+
+          <h2 id="completeTitle">Guardian of Silence</h2>
+
+          <p id="completeText">Result text here</p>
+
+          <div class="complete-buttons">
+            <button id="tryAgain">Try Again</button>
+
+            <button id="enterSilence">Enter The Silence →</button>
+          </div>
+        </div>
+      </div>
+      <!-- END challenge-container -->
+    </section>
+    <!-- END SECTION 06 -->
+
+    <!-- SECTION 07 : THE SILENCE -->
+
+
+<section class="silence" id="silence">
+  <video
+    class="silence-video"
+    id="silenceVideo"
+    autoplay
+    muted
+    loop
+    playsinline
+  >
+    <source src="assets/video/nyepi.mp4" type="video/mp4" />
+  </video>
+
+  <div class="silence-overlay"></div>
+
+  <div class="silence-content">
+
+    <h2>The Silence</h2>
+
+    <!-- Floating Story -->
+
+    <div class="silence-story">
+
+      <p class="floating-text">
+        The island has fallen silent.
+      </p>
+
+      <p class="floating-text">
+        No traffic.
+      </p>
+
+      <p class="floating-text">
+        No lights.
+      </p>
+
+      <p class="floating-text">
+        Only nature.
+      </p>
+
+      <p class="floating-text">
+        Only stars.
+      </p>
+
+    </div>
+
+    <!-- Ending Message -->
+
+    <div class="silence-ending">
+
+      <p class="ending-text">
+        For just a few moments, you experienced what Bali embraces once every
+        year.
+      </p>
+
+      <p class="ending-subtext">
+        Silence is not about escaping the world. It is about returning to
+        yourself.
+      </p>
+
+      <button class="end-btn" id="endJourney">
+        End Journey →
+      </button>
+
+    </div>
+
+  </div>
+</section>
+    <!-- =====================================================
+SECTION 08 : THANK YOU
+====================================================== -->
+
+    <section class="credits" id="credits">
+      <div class="credits-overlay"></div>
+
+      <div class="credits-container">
+        <!-- Heading -->
+
+        <span class="section-number"></span>
+
+        <h2>Thank You</h2>
+
+        <p class="credits-intro">
+          Thank you for experiencing <strong>Nyepi Simulator</strong>. We hope
+          this interactive journey has given you a deeper appreciation of Bali's
+          Day of Silence and the cultural values it represents.
+        </p>
+
+        <!-- ============================= -->
+        <!-- SOURCES -->
+        <!-- ============================= -->
+
+        <h3 class="credits-title">Sources</h3>
+
+        <div class="sources-grid">
+          <div class="source-card">
+            <h4>Video Assets</h4>
+
+            <ul>
+              <li>Hero Introduction by segaragunung</li>
+
+              <li>Noise City by Santiago Balbuena</li>
+
+              <li>Melasti Ceremony by Sergei Starostin</li>
+
+              <li>Pengerupukan by gagaulala</li>
+
+              <li>Nyepi Night by igstryp</li>
+            </ul>
+          </div>
+
+          <div class="source-card">
+            <h4>Photography</h4>
+
+            <ul>
+              <li>Challenge Backgrounds artwork by Harrys Primaharta</li>
+
+              <li>Nyepi Atmosphere by Harrys Primaharta</li>
+
+              <li>Beyond The Silent Background Images by Ars Lumina</li>
+            </ul>
+          </div>
+
+          <div class="source-card">
+            <h4>Audio</h4>
+
+            <ul>
+              <li>Epic Nusantara by fiikuri</li>
+
+              <li>Evergreen by SergePavkinMusic</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ============================= -->
+        <!-- CONTINUE EXPLORING -->
+        <!-- ============================= -->
+
+        <div class="explore-card">
+          <div class="explore-image">
+            <!-- Nanti isi screenshot homepage Bali In One Screen -->
+
+            <img
+              src="assets/images/bali-in-one-screen-preview.jpeg"
+              alt="Bali In One Screen"
+            />
+          </div>
+
+          <div class="explore-content">
+            <span class="explore-label"> Continue Exploring </span>
+
+            <h3>Bali In One Screen</h3>
+
+            <p>
+              Continue discovering Bali through another interactive experience
+              featuring traditions, ceremonies, destinations, local wisdom,
+              culinary heritage, and hidden stories from across the island.
+            </p>
+
+            <a
+  class="explore-btn"
+  href="https://harrysprmhrta.github.io/bali-in-one-screen/"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Explore Website →
+</a>
+          </div>
+        </div>
+
+        <!-- ============================= -->
+        <!-- FOOTER -->
+        <!-- ============================= -->
+
+        <footer class="site-footer">
+          <p class="developer">Designed & Developed by</p>
+
+          <h3>I Nyoman Harrys Primaharta</h3>
+
+          <p class="copyright">© 2026 Nyepi Simulator. All Rights Reserved.</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- AUDIO -->
+
+    <audio id="heroMusic" loop preload="auto">
+      <source src="assets/audio/hero-sound.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio id="challengeMusic" loop preload="auto">
+      <source src="assets/audio/challenge-sound.mp3" type="audio/mpeg" />
+    </audio>
+    <!-- JS -->
+     <div id="fadeScreen"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/notifications.js"></script>
+    <script src="js/challenge.js"></script>
+    <script src="js/silence.js"></script>
+    <script src="js/section7.js"></script>
+    <script src="js/audio.js"></script>
+  </body>
+</html>
